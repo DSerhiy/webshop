@@ -1,3 +1,113 @@
+body,
+ul,
+p,
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
 
+ul {
+  list-style: none;
+}
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hero__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background: center center no-repeat;
+  background-size: cover;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-flex-basis .5s;
+  transition: -webkit-flex-basis .5s;
+  transition: flex-basis .5s;
+  transition: flex-basis .5s, -webkit-flex-basis .5s, -ms-flex-preferred-size .5s;
+}
+
+.hero__item:hover {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.category {
+  padding: 30px 10px;
+}
+
+.category__title {
+  margin-bottom: 15px;
+}
+
+.catalog {
+  font-family: Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__item {
+  position: relative;
+  padding: 10px;
+  border: 1px solid black;
+  width: 300px;
+}
+
+.catalog__item-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.catalog__item-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.catalog__item-text {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.catalog__item-price {
+  display: block;
+  font-weight: bold;
+}
+
+.catalog__item-btn {
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px 15px;
+  border: 1px solid black;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */

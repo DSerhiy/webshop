@@ -1,0 +1,44 @@
+.catalog{
+  font-family:  Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+  }
+  
+  &__item-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  
+  &__item-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  &__item-text {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  &__item-price {
+    display: block;
+    font-weight: bold;  
+  }
+  
+  &__item-btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;;
+    right: 5px;
+    padding: 5px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+}
+
